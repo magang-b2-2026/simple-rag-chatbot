@@ -1,0 +1,9 @@
+fastapi
+pydantic
+qdrant-client
+langchain
+langchain-community
+langchain-qdrant
+langchain-groq
+fastembed
+python-dotenv
