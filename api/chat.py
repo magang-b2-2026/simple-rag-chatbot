@@ -10,6 +10,9 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
+os.environ["HF_HOME"] = "/tmp/hf_cache"
+os.environ["TORCH_HOME"] = "/tmp/torch_cache"
+
 load_dotenv()
 
 app = FastAPI()
