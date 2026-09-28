@@ -25,7 +25,10 @@ app.add_middleware(
 class ChatRequest(BaseModel):
     question: str
 
-embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
+embeddings = FastEmbedEmbeddings(
+    model_name="BAAI/bge-small-en-v1.5", 
+    cache_dir="/tmp"
+)
 
 vector_store = QdrantVectorStore.from_existing_collection(
     embedding=embeddings,
