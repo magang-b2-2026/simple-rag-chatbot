@@ -29,7 +29,7 @@ class ChatRequest(BaseModel):
     question: str
 
 embeddings = FastEmbedEmbeddings(
-    model_name="intfloat/multilingual-e5-large", 
+    model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2", 
     cache_dir="/tmp"
 )
 
