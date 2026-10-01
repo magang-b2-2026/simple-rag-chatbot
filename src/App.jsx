@@ -41,11 +41,8 @@ export default function App() {
   };
 
   return (
-    // Background utama menggunakan warna cerah khas neobrutalism
     <div className="flex flex-col h-screen bg-[#FFE600] items-center justify-center p-4 font-sans text-black">
-      {/* Container utama dengan border tebal dan hard shadow */}
       <div className="w-full max-w-2xl bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rounded-2xl overflow-hidden flex flex-col h-[85vh]">
-        {/* Header dengan warna mencolok dan garis bawah tebal */}
         <div className="bg-[#FF90E8] border-b-4 border-black p-4 text-center font-black text-xl uppercase tracking-wider">
           Panduan Monev MagangHub
         </div>
@@ -89,7 +86,6 @@ export default function App() {
           )}
         </div>
 
-        {/* Form input dengan pemisah garis tebal */}
         <form
           onSubmit={sendMessage}
           className="border-t-4 border-black bg-white p-4 flex gap-3"
