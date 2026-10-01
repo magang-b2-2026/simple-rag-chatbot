@@ -20,7 +20,7 @@ def main():
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
     splits = text_splitter.split_documents(docs)
 
-    embeddings = FastEmbedEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+    embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
 
     client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
     
