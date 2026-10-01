@@ -35,7 +35,7 @@ embeddings = FastEmbedEmbeddings(
 
 vector_store = QdrantVectorStore.from_existing_collection(
     embedding=embeddings,
-    collection_name="panduan_monev_maganghub",
+    collection_name="panduan_monev_indonesia",
     url=os.environ.get("QDRANT_URL"),
     api_key=os.environ.get("QDRANT_API_KEY"),
 )
